@@ -10,11 +10,35 @@
         crossorigin="anonymous">
     <!-- My stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
     <title>Train-Time</title>
 </head>
 
 <body>
-
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 header">
+                <h1>Trian Time</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 train-schedule">
+                <!-- incoming content -->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 train-schedule">
+                <form id="add-train">
+                    <input id="train-name" type="text">
+                    <input id="train-destination" type="text">
+                    <input id="first-train" type="text">
+                    <input id="train-frequency" type="text">
+                    <input id="train-submit" type="submit" value="Sumbit">
+                </form>
+            </div>
+        </div>
+    </div>
 
     <!-- jQuery minified -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
