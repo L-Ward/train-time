@@ -18,24 +18,48 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-xs-12 header">
-                <h1>Trian Time</h1>
+            <div class="col-12 header">
+                <h1>Train Time</h1>
             </div>
         </div>
+    </div>
+    <div class="container">
         <div class="row">
-            <div class="col-xs-12 train-schedule">
+            <div class="col-12 train-schedule">
                 <!-- incoming content -->
             </div>
         </div>
-        <div class="row">
-            <div class="col-xs-12 train-schedule">
-                <form id="add-train">
-                    <input id="train-name" type="text">
-                    <input id="train-destination" type="text">
-                    <input id="first-train" type="text">
-                    <input id="train-frequency" type="text">
-                    <input id="train-submit" type="submit" value="Sumbit">
-                </form>
+        <div class="row train-form">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Add Train</h4>
+                    </div>
+
+                    <div class="card-body">
+                        <form id="add-train">
+                            <div class="form-group">
+                                <label for="train-name">Train Name</label>
+                                <input class="form-control" id="train-name" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label for="train-destination">Destination</label>
+                                <input class="form-control" id="train-destination" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label for="first-train">First Train (HH:mm - military time)</label>
+                                <input class="form-control" id="first-train" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label for="train-frequency">Frequency (min)</label>
+                                <input class="form-control" id="train-frequency" type="text">
+                            </div>
+                            <div class="form-group">
+                                <input id="train-submit" type="submit" value="Sumbit">
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
