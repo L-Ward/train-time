@@ -72,15 +72,9 @@ function nextArrival(firstTime, frequency) {
 function minutesAway(firstTime, frequency) {
     // First Time (pushed back 1 year to make sure it comes before current time)
     var firstTimeConverted = moment(firstTime, "HH:mm").subtract(1, "years");
-    console.log(firstTime);
-    console.log(firstTimeConverted);
-    
     var diffTime = moment().diff(moment(firstTimeConverted), "minutes");
-    console.log(diffTime);
     var timeRemainder = diffTime % frequency;
-    console.log(timeRemainder);
     var minutesTilTrain = frequency - timeRemainder;
-    console.log(minutesTilTrain);
     return minutesTilTrain;
 };
 
