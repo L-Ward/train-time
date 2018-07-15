@@ -1,3 +1,35 @@
 body {
-    background-color: lightslategray;
+    background-color: #778899;
+}
+
+header {
+    width: 100%;
+    margin: 10px 0px 10px 0px;
+    color: #c9d7e5;
+}
+
+.card {
+    border: 1px solid #34404c;
+    color: #34404c;
+}
+
+.card-header {
+    background-color: #c9d7e5;
+    border-bottom: 1px solid #778899;
+}
+
+.train-hover:hover {
+    background-color: #c9d7e5;
+}
+
+#train-submit  {
+    border: 1px solid #34404c;
+    background-color: #c9d7e5;
+    color: #34404c;
+}
+
+#train-submit:hover {
+    border: 1px solid #c9d7e5;
+    background-color: #34404c;
+    color: #c9d7e5;
 }

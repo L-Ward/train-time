@@ -14,27 +14,30 @@
     <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
     <!-- Moment JS -->
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
     <title>Train-Time</title>
 </head>
 
 <body>
     <!-- Page Header -->
-    <div class="container-fluid">
+    <header class="container">
         <div class="row">
-            <div class="col-12 header">
-                <h1>Train Time</h1>
+            <div class="col-6 header">
+                <h1>Train Schedule</h1>
+            </div>
+            <div class="col-6 clock m-auto text-right">
+                <!-- Incoming content -->
             </div>
         </div>
-    </div>
+    </header>
     <!-- Train schedule content -->
-    <div class="container">
+    <div class="container train-schedule">
         <div class="row">
-            <div class="col-12 train-schedule">
-                <!-- Current Employees-->
-                <div class="card mb-3">
+            <div class="col-12">
+                <div class="card mb-4">
                     <h4 class="card-header">Current Train Schedule</h4>
                     <div class="card-body">
-                        <table class="table table-sm table-hover" id='train-table'>
+                        <table class="table table-sm" id='train-table'>
                             <thead>
                                 <tr>
                                     <th scope="col">Train Name</th>
@@ -76,10 +79,10 @@
                             </div>
                             <div class="form-group">
                                 <label for="train-frequency">Frequency (min)</label>
-                                <input class="form-control" id="train-frequency-input" type="number">
+                                <input class="form-control" id="train-frequency-input" type="text">
                             </div>
                             <div class="form-group">
-                                <input id="train-submit" type="submit" value="Sumbit">
+                                <input class= "btn" id="train-submit" type="submit" value="Sumbit">
                             </div>
                         </form>
                     </div>
